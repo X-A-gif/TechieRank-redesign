@@ -11,7 +11,12 @@
     border-radius: 10px;
   }
 
-  
+  .card {
+    background-color: #21262d;
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+  }
   
   .github-button:hover {
     background-color: #1c2023;

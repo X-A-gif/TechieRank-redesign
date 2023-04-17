@@ -13,8 +13,8 @@ const Card = () => {
         <p className='text-lg font-thin'>
            Check your GitHub rank then stand out by sharing a free verified credential proving ownership of your GitHub to LinkedIn
         </p>
-        <div className='absolute bottom-0'>
-          <div className='flex justify-center item-center text-black'>
+        <div className=''>
+          <div className='ml-8 text-black'>
             <button className="github-button  border-2 rounded-xl h-10 text-sm bg-white font-bold mr-10">Login with GitHub</button>
           </div>
         </div>
@@ -30,7 +30,7 @@ const Card = () => {
       <h1 className='text-3xl my-5'>Stack Overflow</h1>
         <p className='text-lg font-thin'>
           Check your Stack Overflow rank then stand out by sharing a free verified credential proving ownership of your Stack Overflow to LinkedIn        </p>
-        <div className='absolute bottom-0 ml-10 text-black'>
+        <div className='text-black ml-8'>
           <button className="github-button border-2 rounded-xl h-10 text-sm bg-white font-bold mr-10">Login with GitHub</button>
         </div>
       </div>

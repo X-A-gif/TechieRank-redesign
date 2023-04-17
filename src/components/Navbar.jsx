@@ -10,7 +10,7 @@ const Navbar = ({ cRef }) => {
   };
 
   return (
-    <nav className="top-0 w-full bg-transparent mr-24 z-50">
+    <nav className="top-0 w-full bg-transparent md:mr-24 z-50">
       <div className="max-w-screen-xl mx-auto px-4">
         <div className="flex justify-between items-center py-4 md:py-6 lg:py-8">
           <div className="flex items-center">
