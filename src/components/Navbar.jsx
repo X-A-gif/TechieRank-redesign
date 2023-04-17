@@ -1,70 +1,50 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { HiMenuAlt4 } from 'react-icons/hi';
-
-import logo from '../assets/Gitscorestxt.png';
+import logo from '../assets/gitScores.png';
 
 const Navbar = ({ cRef }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isSmallScreen, setIsSmallScreen] = useState(false);
-
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
-  useEffect(() => {
-    const handleResize = () => {
-      setIsSmallScreen(window.innerWidth <= 640);
-    };
-    handleResize();
-    window.addEventListener('resize', handleResize);
-  }, []);
-
- 
   return (
-    <nav className="absolute mx-auto w-full z-50">
-      <div className="flex items-center justify-between h-16 px-8">
-        <div className="flex items-center cursor-pointer">
-            <img
-              src={logo}
-              alt="Risidio"
-              className={`h-48 mr-4 ml-48 mt-16 mx-auto my-6 ${isSmallScreen ? "smaller-logo" : ""}`}
-            /> 
-            <div className="flex items-center -ml-20">
+    <nav className="top-0 w-full bg-transparent mr-24 z-50">
+      <div className="max-w-screen-xl mx-auto px-4">
+        <div className="flex justify-between items-center py-4 md:py-6 lg:py-8">
+          <div className="flex items-center">
+            <img src={logo} alt="" className="h-8 md:h-14 mr-2 md:mr-4 cursor-pointer" />
           </div>
-          <div className="ml-4 flex items-center mt-8">
-            <div className="hidden lg:block">
-     
-            </div>
-          </div>
-          <button className="absolute right-5 block md:hidden bg-transparent text-white hover:text-gray-100 focus:outline-none" onClick={toggleMenu}> 
-            <HiMenuAlt4 className="w-6 h-6" />
-          </button>
-        </div>
-        <div className="hidden lg:block mt-8 mr-44">
-          <ul className="flex cursor-pointer font-thin">
-          <button className="border-0 bg-transparent border-none font-medium text-sm text-white py-2 px-6 hover:bg-blue-500 hover:text-white transition duration-300" onClick={cRef}>
-              How it Works
-          </button>
-            <button className="bg-gray-600 font-medium text-sm text-white rounded-full py-2 px-6  hover:bg-blue-500 hover:text-white transition duration-300">
-              GitRank
-            </button>
-          </ul>
-        </div>
-      </div>
-      <div className="lg:hidden">
-        {isOpen && (
-          <div className='mt-12'>
-            <ul className="burgerMenu grid place-items-start text-white text-lg w-full font-normal">
-                <li className="block px-4 py-2 cursor-pointer">Gallery</li>
-                <li className="block px-4 py-2 cursor-pointer">Collections</li>
+          <div className="hidden md:block">
+            <ul className="flex items-center text-white">
+              <li className="mr-4">
+                <button className="py-2 px-4 text-sm font-medium rounded-md hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition duration-300" onClick={cRef}>
+                  How it Works
+                </button>
+              </li>
+              <li>
+                <button className="py-2 px-4 text-sm font-medium bg-gray-800 rounded-md hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition duration-300">
+                  GitRank
+                </button>
+              </li>
             </ul>
           </div>
-        )}
+          <div className="md:hidden">
+            <button className="flex items-center justify-center p-2 text-gray-900 hover:bg-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition duration-300" onClick={toggleMenu}>
+              <HiMenuAlt4 className="h-6 w-6" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div className={`md:hidden ${isOpen ? "block" : "hidden"}`}>
+        <ul className="bg-white py-2">
+          <li className="block px-4 py-2 text-sm font-medium text-gray-900 hover:bg-gray-100 transition duration-300">How it Works</li>
+          <li className="block px-4 py-2 text-sm font-medium text-white bg-indigo-500 rounded-md hover:bg-indigo-600 transition duration-300">GitRank</li>
+        </ul>
       </div>
     </nav>
   );
 };
-
 
 export default Navbar;

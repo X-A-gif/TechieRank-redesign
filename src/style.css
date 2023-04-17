@@ -16,7 +16,7 @@
   }
   
   body {
-    background-color: #111;
+    background-color: #0d1117;
     font-family: 'Signika Negative', sans-serif, Arial;
     overscroll-behavior: none;
     margin: 0;
@@ -24,12 +24,12 @@
     overflow-x: hidden;
   }
   
-  /* .header {
+  .header {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-  } */
+  }
   
   #smooth-content {
     overflow: visible;
@@ -45,7 +45,7 @@
     position: relative;
   }
   
-  .box {
+  .box1 {
     width: 75%;
     height: 25%;
     margin-top: 14rem;
@@ -64,6 +64,27 @@
     object-fit: cover;
   }
   
+  .box {
+    width: 75%;
+    height: 25%;
+    margin-top: 24rem;
+    background-color: transparent;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    line-height: 100px;
+    font-size: 50px;
+    text-align: center;
+    will-change: transform;
+    background-image: url(../assets/hero_bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+  }
+  
+
+
   .box.active {
     background-color: red;
   }
@@ -74,14 +95,26 @@
   }
   
   .box-b {
-    top: 1200px;
+    top: 650px;
   }
   
   .box-c {
-    top: 1600px;
-    background-color: #e26c16;
+    top: 1200px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
   }
   
+  .box-d {
+    top: 2100px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+
   .line {
     visibility: hidden;
     width: 2px;
@@ -94,7 +127,6 @@
   
 
   
-  
   .end {
     position: absolute;
     /*   bottom: 0; */
@@ -104,46 +136,3 @@
     color: white;
   }
   
-  /* button:not('.box') { breaking for some reason in codepen? */
-  /* button {
-    display: inline-block;
-    outline: none;
-    border: none;
-    padding: 8px 14px;
-    background: var(--light);
-    background-image: linear-gradient(
-      to bottom,
-      hsl(0deg 0% 100%),
-      hsl(0deg 0% 94%)
-    );
-    -webkit-box-shadow: 0px 1px 0px #414141;
-    -moz-box-shadow: 0px 1px 0px #414141;
-    box-shadow: 0px 1px 0px #414141;
-    color: var(--dark);
-    text-decoration: none;
-    -webkit-border-radius: 4;
-    -moz-border-radius: 4;
-    border-radius: 4px;
-    padding: 12px 25px;
-    font-family: 'Signika Negative', sans-serif;
-    text-transform: uppercase;
-    font-weight: 600;
-    cursor: pointer;
-    line-height: 18px;
-  }
-  
-  .light button {
-    color: var(--light);
-    background-image: linear-gradient(to bottom, #575757, #414141);
-  }
-  
-  button:hover {
-    background: var(--green-light);
-    background-image: linear-gradient(to bottom, #57a818, #4d9916);
-    -webkit-box-shadow: 0px 1px 0px fefefe;
-    -moz-box-shadow: 0px 1px 0px fefefe;
-    box-shadow: 0px 1px 0px fefefe;
-    color: #ffffff;
-    text-decoration: none;
-  }
-   */

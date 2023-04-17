@@ -1,18 +1,24 @@
 .Hero {
     background-image: url(../assets/hero_bg.svg);
     background-repeat: no-repeat;
-    object-fit: contain;
+    object-fit: cover;
   }
 
   .glass {
-    background: rgba( 100, 95, 95, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    background-color: #21262d;
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
   }
 
+  
+  
+  .github-button:hover {
+    background-color: #1c2023;
+    cursor: pointer;
+  }
+  
+ 
   @media (max-width: 768px) {
     img {
       max-width: 50%;

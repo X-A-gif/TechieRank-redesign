@@ -8,6 +8,8 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Card from './components/Card';
+import Footer from './components/Footer';
+import Banner from './components/Banner';
 
 function App() {
   const main = useRef();
@@ -42,26 +44,29 @@ function App() {
 
       <div id="smooth-wrapper" ref={main}>
         <div id="smooth-content">
-          <header className="header">
-          <Navbar />
 
-          
+          <header className="header">
+            <Navbar />
           </header>
+
             <div className='flex justify-center items-center'>
               <div className="box box-a" data-speed="0.5">
-              <Hero />
-
-              </div>
-              <div className="box box-b" data-speed="0.8">
-                <Card />
+                <Hero />
               </div>
 
+                <div className="box box-b flex justify-center items-center" data-speed="0.8">
+                  <Card />
+                </div>
+
+                <div className="box box-c flex justify-center items-center" data-speed="0.8">
+                  <Banner />            
+                </div>  
+              
               <div >
-              <div className="box box-c" data-speed="1.5">
-                c
+                <div className=" box-d" data-speed="1.5">
+                  <Footer />
+                </div>
               </div>
-            </div>
-          
           </div>
          
           <div className="line"></div>
