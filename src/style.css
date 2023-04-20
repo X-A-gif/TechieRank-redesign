@@ -45,29 +45,11 @@
     position: relative;
   }
   
-  .box1 {
-    width: 75%;
-    height: 25%;
-    margin-top: 14rem;
-    background-color: transparent;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 100;
-    line-height: 100px;
-    font-size: 50px;
-    text-align: center;
-    will-change: transform;
-    background-image: url(../assets/hero_bg.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: cover;
-  }
-  
+
   .box {
-    width: 75%;
-    height: 25%;
-    margin-top: 24rem;
+    width: 100%;
+    height: 50%;
+    margin-top: 6rem;
     background-color: transparent;
     position: absolute;
     left: 50%;
@@ -77,10 +59,6 @@
     font-size: 50px;
     text-align: center;
     will-change: transform;
-    background-image: url(../assets/hero_bg.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: cover;
   }
   
 
@@ -95,7 +73,7 @@
   }
   
   .box-b {
-    top: 650px;
+    top: 1350px;
   }
   
   .box-c {

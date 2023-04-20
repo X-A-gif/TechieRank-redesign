@@ -1,11 +1,13 @@
-.Hero {
-    background-image: url(../assets/hero_bg.svg);
-    background-repeat: no-repeat;
-    object-fit: cover;
-  }
+
+  .text-color {
+    background: linear-gradient(92.7deg,#56d364 -1.37%,#79c0ff 78.71%);
+    -webkit-background-clip: text;
+    color: transparent;
+  } 
+
 
   .glass {
-    background-color: #21262d;
+    background-color: transparent;
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 10px;
@@ -22,7 +24,6 @@
     background-color: #1c2023;
     cursor: pointer;
   }
-  
  
   @media (max-width: 768px) {
     img {
