@@ -1,21 +1,25 @@
 import React from 'react';
-// import logo from '../images/logo.png'; // replace with your logo image file path
+import rank from '../assets/techierank.png';
 
 const LogoBanner = () => {
   return (
-    <div className="card flex flex-col items-center w-full py-2">
-      <div className="container mx-auto flex flex-col justify-between items-center">
-        <div className='flex mb-2 md:mb-0 '>
-          <h4 className='justify-center items-center text-xl text-white text-center md:text-left'>Some partner companies hiring & accepting TechieRank profiles</h4>
-        </div>
-      
-        <div className="flex items-center justify-center md:justify-end md:mt-4">
-          <div className='flex-row'>
-          <img className="h-6 md:h-8 w-auto mx-1 mb-2 md:mb-0" src="placeholder " alt="Logo" />
-          <img className="h-6 md:h-8 w-auto mx-1 mb-2 md:mb-0" src="placeholder " alt="Logo" />
-          <img className="h-6 md:h-8 w-auto mx-1 mb-2 md:mb-0" src="placeholder " alt="Logo" /></div>
-        </div>
+    <div className='flex justify-center items-center'>
+      <div className='mx-10 text-white'>
+        text
       </div>
+      
+    <div className="bg-gray-800 rounded-md flex flex-col items-center w-72 py-2">
+      <div className="container mx-auto flex flex-col justify-between items-center">
+        <div className='flex justify-center mb-2 md:mb-0'>
+          <div className='flex items-center'> 
+            <img src={rank} alt="" className='h-10 w-10 mr-5 justify-center my-5 items-center' />
+            <h4 className='flex justify-center items-center font-normal text-2xl text-white text-center md:text-left'>
+              Chrome extension
+            </h4>
+          </div>
+        </div>
+      </div>  
+    </div>
     </div>
   );
 };

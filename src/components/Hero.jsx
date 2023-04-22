@@ -16,7 +16,7 @@ const Hero = () => {
         <h1 className='font-bold text-7xl text-center mb-4'>
           Uncover Hidden Talent with GitScores
         </h1>
-        <p className='text-3xl my-5 text-center'>
+        <p className='text-color text-3xl my-5 text-center'>
           The Ultimate Developer Assessment Platform
         </p>
         <div className='w-6.1'>
@@ -25,11 +25,11 @@ const Hero = () => {
               Git Ranked Now
             </button>
           </div>
-          <h2 className='text-5xl mt-36 text-center font-bold'>
-            Soft Skills Assessment
+          <h2 className='text-3xl mt-36 text-center font-bold'>
+            Soft Skills Assessments
           </h2>
           <p className='text-color text-center text-xl mt-20 font-bold'>
-            Bunch of text so you can see
+            Assess Technical Skills on GitHub and Stack Overflow
           </p>
         </div>
       </div>

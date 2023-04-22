@@ -19,11 +19,52 @@
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 10px;
   }
+
+  
   
   .github-button:hover {
     background-color: #1c2023;
     cursor: pointer;
   }
+  
+  .text-black {
+  display: flex;
+  align-items: center; /* align items vertically in the center */
+}
+
+.github-button {
+  display: flex;
+  align-items: center; /* align items vertically in the center */
+  gap: 0.5rem; /* add some spacing between the image and text */
+  padding: 0.5rem; /* add padding for better visual appearance */
+  background: rgb(255, 170, 0);
+  border: none; /* remove border */
+  cursor: pointer; /* add cursor pointer for better usability */
+  /* add any other styles you want for the button */
+}
+
+.github-button img {
+  height: 1.25rem; /* adjust the height of the image as needed */
+  width: 1.25rem; /* adjust the width of the image as needed */
+}
+
+
+.stack-button {
+  display: flex;
+  align-items: center; /* align items vertically in the center */
+  gap: 0.5rem; /* add some spacing between the image and text */
+  padding: 0.5rem; /* add padding for better visual appearance */
+  background: rgb(255, 170, 0);
+  border: none; /* remove border */
+  cursor: pointer; /* add cursor pointer for better usability */
+  /* add any other styles you want for the button */
+}
+
+.stack-button img {
+  height: 1.25rem; /* adjust the height of the image as needed */
+  width: 1.25rem; /* adjust the width of the image as needed */
+}
+
  
   @media (max-width: 768px) {
     img {
