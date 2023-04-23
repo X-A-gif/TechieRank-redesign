@@ -16,7 +16,7 @@ const LogoBanner = () => {
         </div>
       </div>  
     </div>
-  );
+  ); 
 };
 
 export default LogoBanner;

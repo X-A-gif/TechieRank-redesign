@@ -1,26 +1,27 @@
 import React from 'react';
 import rank from '../assets/techierank.png';
 
+import bg from '../assets/dots-bg.png';
+
 const LogoBanner = () => {
   return (
-    <div className='flex justify-center items-center'>
-      <div className='mx-10 text-white'>
-        text
-      </div>
-      
-    <div className="bg-gray-800 rounded-md flex flex-col items-center w-72 py-2">
-      <div className="container mx-auto flex flex-col justify-between items-center">
-        <div className='flex justify-center mb-2 md:mb-0'>
-          <div className='flex items-center'> 
-            <img src={rank} alt="" className='h-10 w-10 mr-5 justify-center my-5 items-center' />
-            <h4 className='flex justify-center items-center font-normal text-2xl text-white text-center md:text-left'>
-              Chrome extension
-            </h4>
-          </div>
+    <section className="flex justify-center items-center bg-cover h-screen min-w-full text-white mx-24" 
+    style={{backgroundImage: `url(${bg})`, }}>
+        <div className=" max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+            <div className="mr-auto place-self-center lg:col-span-7">
+                <h1 className="max-w-2xl mb-4  font-extrabold tracking-tight leading-none sd:text-md md:text-xl xl:text-4xl">Supercharge Your GitHub and Stack Overflow Assessments with Our Chrome Extension</h1>
+                <p className="text-color max-w-2xl mb-6 font-light mt-10 lg:mb-8 md:text-lg lg:text-xl ">Verified Credentials: Easily share verified credentials of your GitHub ownership to LinkedIn, making your profile stand out to potential employers</p>
+                <a href="#" className="inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+                    Get the 
+                    <svg className="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </a>
+                <a href="https://chrome.google.com/webstore/detail/techierank-github-stack-o/hafpijmdkicjolibafkgekojggaaicid?hl=en-US" className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center  border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+                    Chrome extension
+                </a> 
+            </div>
+               
         </div>
-      </div>  
-    </div>
-    </div>
+    </section>
   );
 };
 
