@@ -1,20 +1,19 @@
 import React from 'react';
-import './utils.css';
 
 import bg from '../assets/dots-bg.png';
 
 const Hero = () => {
   return (
-    <div className='flex items-center justify-center mt-56 h-screen min-w-full relative'>
+    <div className='flex items-center mt-96 justify-center h-screen min-w-full relative'>
       <div
         className='absolute top-0 bg-no-repeat bg-cover left-0 w-full h-full'
         style={{backgroundImage: `url(${bg})`, opacity: 0.3,  }}>
-          </div> 
-      <div className='w-full text-white md:w-1/2 md:text-left'>
-        <h1 className='font-bold text-7xl text-center mb-4'>
+      </div> 
+      <div className='flex flex-col justify-center mt-32 items-center w-full text-white md:w-1/2 md:text-center'>
+        <h1 className='font-bold text-7xl mb-4'>
           Uncover Hidden Talent with GitScores
         </h1>
-        <p className='text-color text-3xl my-5 text-center'>
+        <p className='text-color text-3xl my-5'>
           The Ultimate Developer Assessment Platform
         </p>
         <div className='w-6.1'>
@@ -23,7 +22,6 @@ const Hero = () => {
               Git Ranked Now
             </button>
           </div>
-       
         </div>
       </div>
     </div>
@@ -31,4 +29,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
