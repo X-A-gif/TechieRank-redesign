@@ -23,12 +23,7 @@ const Hero = () => {
               Git Ranked Now
             </button>
           </div>
-          <h2 className='text-3xl mt-28 text-center font-bold'>
-            Soft Skills Assessments
-          </h2>
-          <p className='text-color text-center text-xl mt-20 font-bold'>
-            Assess Technical Skills on GitHub and Stack Overflow
-          </p>
+       
         </div>
       </div>
     </div>

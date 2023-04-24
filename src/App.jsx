@@ -27,7 +27,7 @@ function App() {
 
                 <div className="box box-b flex justify-center items-center" data-speed="1">
                   <div
-                      className='max-w-full bg-cover bg-no-repeat'
+                      className='md:w-2/3 bg-cover bg-no-repeat'
                       style={{backgroundImage: `url(${bg})` }}>
                         <Card />
                   </div> 
