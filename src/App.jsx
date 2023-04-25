@@ -6,49 +6,20 @@ import Card from './components/Card';
 import Footer from './components/Footer';
 import Banner from './components/Banner';
 
-import bg from './assets/land-bg.png';
 
 
-function App() {
-
+const App = () => {
   return (
-    <>
-        <div id="smooth-content">
+    <div>
+      <Navbar />
+      <Hero />
 
-          <header className="header">
-            <Navbar />
-          </header>
+        <Card />
 
-            <div className='flex justify-center items-center'>
-              <div className="box box-a" data-speed="0.5">
-                <Hero />
-              </div>
+      <Banner />
 
-
-                <div className="box box-b flex justify-center items-center" data-speed="1">
-                  <div
-                      className='md:w-2/3 bg-cover bg-no-repeat'
-                      style={{backgroundImage: `url(${bg})` }}>
-                        <Card />
-                  </div> 
-                </div>
-
-                
-                <div className="box box-c flex justify-center items-center" data-speed="0.8">
-                  <Banner />            
-                </div>  
-              
-              <div >
-                <div className=" box-d" data-speed="1.5">
-                  <Footer />
-                </div>
-              </div>
-          </div>
-         
-        </div>
-
-    </>
-  );
+    </div>
+  )
 }
 
-export default App;
+export default App

@@ -5,6 +5,9 @@
     color: transparent;
   } 
 
+  .opac {
+    opacity: 1 !important;
+  }
 
   .glass {
     background-color: transparent;

@@ -8,8 +8,8 @@ import blackMark from '../assets/GitHub-Mark.png';
 
 const Card = () => {
   return (
-    <div className='flex flex-col justify-center items-center bg-cover object-cover bg-no-repeat w-full space-y-4 md:space-y-0 md:space-x-14'>
-      <div className='glass w-full rounded-xl overflow-hidden shadow-md text-white flex-1'>
+    <div className='flex flex-col justify-center items-center  bg-cover object-cover bg-no-repeat w-full space-y-4 md:space-y-0 md:space-x-14'>
+      <div className='glass flex  w-full rounded-xl overflow-hidden shadow-md text-white flex-1'>
         <img src={mark} alt='github icon' className='mx-auto my-5 h-12 w-12' />
         <h1 className='text-3xl my-5'>Works with Github</h1>
           <p className='text-lg font-thin mx-24'>
