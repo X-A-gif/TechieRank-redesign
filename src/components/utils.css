@@ -33,6 +33,10 @@
   align-items: center; /* align items vertically in the center */
 }
 
+.info {
+  background-color: #0a0c10;
+}
+
 .github-button {
   display: flex;
   align-items: center; /* align items vertically in the center */
@@ -66,9 +70,6 @@
   width: 1.25rem; /* adjust the width of the image as needed */
 }
 
-.techie {
-  height: 750px;
-}
 
   @media (max-width: 768px) {
     img {

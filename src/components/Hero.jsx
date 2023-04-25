@@ -7,17 +7,20 @@ import land from '../assets/land-bg.png';
 const Hero = () => {
   return (
     <div className='flex items-center justify-center  h-screen min-w-full relative'>
+      
       <div
-        className='absolute top-0 bg-no-repeat bg-cover left-0 w-full h-full'
+        className='glass absolute top-0 bg-no-repeat bg-cover left-0 w-full h-full'
         style={{backgroundImage: `url(${bg})`, opacity: 0.3,  }}
         >
-      </div> 
       <div
-        className='absolute top-0 bg-no-repeat bg-cover left-0 w-full h-full'
+        className='glass absolute top-0 bg-no-repeat bg-cover left-0 w-full h-full'
         style={{backgroundImage: `url(${land})`, opacity: 0.3,  }}
         >
       </div> 
-      <div className='flex flex-col justify-center items-center w-full text-white md:w-1/2 md:text-center'>
+ 
+      </div>
+
+           <div className='flex flex-col justify-center items-center w-full text-white md:w-1/2 md:text-center'>
         <h1 className='opac font-bold text-7xl mb-4 '>
           Uncover Hidden Talent with GitScores
         </h1>
